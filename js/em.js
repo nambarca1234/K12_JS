@@ -26,3 +26,14 @@ function getInf(list){
     console.log(list)
 }
 getInf(emList)
+let listOrder=[
+    {
+        oid:1,
+        name:"iphone1"
+    },
+    {
+        oid:1,
+        name:"samsung"
+    }
+]
+console.log(listOrder)
