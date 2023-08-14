@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = 1
+    let str = "hello"
+    let str2 = "hello"
+    var fl = 1.0
+    var fl2 = 1
+    str2 = str + x
+    console.log(x + fl)
+    console.log(str)
+    console.log(fl2 + "sss")
+    console.log(str2)
+    x = true
+    console.log(x)
+
+    if (x = false) {
+        console.log(x)
+    } else console.log("sai")
+
+    x = 3
+    for (let i = 0; i < x; i++) {
+        console.log(i + 1)
+    }
+
+    let n = 20
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            console.log("so chan la " + i);
+        } else console.log("so le la " + i)
+    }
+
+    let check = 0;
+    for (let i = 1; i < 100; i++) {
+
+        for (let j = 1; j <= i; j++) {
+            if (i % j == 0) {
+                check = check + 1;
+            }
+        }
+        if (check == 2) {
+            console.log(i + " la so nguyen to");
+        }
+        check = 0;
+    }
+    // goi ham
+    x=71
+    chanLe(x)
+    function chanLe(x) {
+        let check2=soNguyenTo(x)
+        if(check2){
+            console.log(x+" la so nguyen to")
+        }
+        if (x % 2 == 0) {
+            console.log(x + " la so chan")
+        } else console.log(x + " la so le")
+    }
+
+    function soNguyenTo(x) {
+        let check = 0;
+        for (let j = 1; j <= x; j++) {
+            if (x % j == 0) {
+                check = check + 1;
+            }
+        }
+        if (check == 2) {
+            return true
+        } else
+            return false
+    }
+// mang
+    let arr=[1,2,3,4,5]
+    function logArr(arrS){
+        console.log(arrS)
+    }
+    logArr(arr)
+
+</script>
+</html>
